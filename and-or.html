@@ -1,0 +1,40 @@
+<script>
+  // and  && -> ambele parti trebuie sa fie adevar : true and true -> true
+  // or   || -> false or false -> false, e destul doar una sa fie adevarata.
+
+  let value = 5
+  // [0...10] < value ?
+  
+  //--------0--------------------->
+  //        [-------------------> infinity
+  value >= 0 
+
+  //---------------------10------->
+  //infinity<-------------]
+  value <= 10
+
+  //in programare notiunea de infinitate nu prea exista, ea oricum este aproximata cu notiunea "infinity"
+  
+  if(value >= 0 && value <= 10) {
+    alert( "The value " + value + " is in" )
+  }
+  //2 or ||
+  /*
+  let value = 5
+  // [0...10] < value ?
+  
+       //------------0--------------------->
+  //infinity<--------) 
+  value < 0 
+
+  //---------------------10------->
+                          (-------> infinity
+  value > 10
+
+  //in programare notiunea de infinitate nu prea exista, ea oricum este aproximata cu notiunea "infinity"
+
+  if(value < 0 || value > 10) {
+    alert( "The value " + value + " is out" )
+  }
+  */
+</script>

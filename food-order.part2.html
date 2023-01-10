@@ -1,0 +1,77 @@
+<!--  
+  WHAT IS DATA TYPE?
+
+  BASIC TYPES TO START WITH
+  * BOOLEN  !!
+  * NUMBER  !!
+  * STRING  !!
+  * ARRAY
+  * OBJECT
+  ...
+
+  SPECIAL TYPES 
+  * UNDEFINED   !!
+  * NULL        !!
+  * NaN         !!
+  ...
+-->
+
+<script>
+  //IN : our app asks the user for the desired quantity
+  //FACT : we know the price for each item
+  //OUT: total cost
+
+  //data 
+  foodName       = "Salad"   //STRING
+  foodPriceValue = 15.00    //NUMBER
+
+  PriceUnits = "MDL"    //STRING
+
+  deliveryTax    = 10.00    //NUMBER
+
+  foodAvailQ = 20       // number
+
+  freeDelivery = 0.00
+  taxFree_from = 100.00
+
+
+
+  //alert( "We have" + foodName)
+  clientQ = prompt( 
+    "MENU\n\n " + foodName + "\n" + foodPriceValue +  PriceUnits + "\n\nHow many?"
+  )
+
+  cost      = foodPriceValue * clientQ + deliveryTax
+
+
+  //IF ELSE STATEMENT :
+  //HW1 : 1. add availability (if/else)
+  //      2. add free delivery (if/else)
+
+  if( foodAvailQ >= clientQ ) {
+    alert(
+      "You've ordered: " + clientQ 
+      )
+
+      if( freeDelivery = cost >= taxFree_from) {
+      alert( 
+        "You've ordered: " + clientQ + 
+        "\nDelivery Tax: " + freeDelivery + PriceUnits +
+        "\nBill: " + cost + freeDelivery + PriceUnits 
+        )
+      } else {
+        alert( 
+          "\nDelivery Tax: " + deliveryTax + PriceUnits +
+          "\nBill: " + cost + PriceUnits 
+        )
+      }
+
+  } else {
+    alert( "Sorry, we can offer only: " + foodAvailQ )
+  }
+
+
+  
+  
+</script>
+

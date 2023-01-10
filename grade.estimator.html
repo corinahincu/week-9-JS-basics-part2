@@ -1,0 +1,47 @@
+<script>
+  
+  //HW: what would result : 
+  //                      parseInt(9.9)
+  //                      parseInt(9.1)
+  //                      parseInt(9.5)
+  //                      parseInt(9.59)
+  // in all cases the result will be : 9 -> parseInt() stops at the decimal point.
+  // parseInt(9.9999999999999999) -> 10
+  // parseInt(9.999999999999999)  -> 9 
+  // dupa al 15-lea "9" se aproximeaza !
+
+
+  grade = parseInt(prompt("Your grade please:  "))
+  LIMIT = 7
+
+
+/* if ( grade >= LIMIT) {
+    alert("GOOD!")
+
+  } else {
+    alert("BAD!")
+  }
+  */
+
+  // HW: 1..4 - very bad
+  //     5..6 - bad
+  //     7..8 - ok
+  //     9    - good
+  //     10   - excellent
+
+  if (grade >= 1 && grade <= 4) {
+    alert("VERY BAD!")
+  } else if( grade <= 6) {
+    alert("BAD!")
+  } else if( grade <= 8) {
+    alert("OK!")
+  } else if( grade == 9) {
+    alert("GOOD!")
+  } else if( grade == 10){
+    alert("EXCELLENT!")
+  } else {
+    alert("THIS GRADE DOES NOT EXIST!!")
+  }
+
+  
+</script>

@@ -1,0 +1,37 @@
+<script>
+  // IN : student general mark
+  // OUT : yes/no
+
+  //variable NAMING CONVENTION !!! -> sa ne straduim sa utilizam a..zA..Z_0..9 + camelCase -> cratima nu se permite
+  
+  // variable
+  studentMark = +prompt("mark ?")  // String ( + in fata -> obtinem numar)
+  studentBudget = +prompt("money ?")
+
+
+  // constant 
+  APPROVAL_MARK = 7.0  // Number
+  CONTRACT_COST = 10000 
+  
+  //approvedMark  = studentMark >= APPROVAL_MARK
+  //approvedMoney = studentBudget >= CONTRACT_COST
+
+  //approved      = approvedMark || approvedMoney
+  
+  //approved = studentMark >= APPROVAL_MARK || studentBudget >= CONTRACT_COST 
+
+  /*approved =  studentMark >= APPROVAL_MARK 
+                ||
+              studentBudget >= CONTRACT_COST */
+
+
+  //alert("Is approved?" + approved) 
+  
+  if( approved = studentMark >= APPROVAL_MARK || studentBudget >= CONTRACT_COST ) {
+    alert( "Approved" )
+  } else {
+    alert( " NOT approved")
+  }
+
+
+</script>

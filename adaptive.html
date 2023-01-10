@@ -1,0 +1,59 @@
+<!--   
+  aka - media query
+-->
+
+<script>
+  // IN data
+  //const BREAK_POINT = 1100
+
+  const BREAK_POINT_EXTRA_SMALL = 560
+  const BREAK_POINT_SMALL       = 980
+  const BREAK_POINT_MEDIUM      = 1200
+
+  const MIN_SIZE                = 60
+  const MAX_SIZE                = 3000
+  let windowWidth = +prompt("Write a window size: ")
+
+
+  //------------x-------------------> window size
+  // mobile    1100    dekstop
+
+
+  // HW : add breakpoints :
+
+
+  //              560           980          1200          
+  //---------------x-------------x-------------x----------------> window size
+  // extra small     small          medium          large
+
+
+  // + size < 60 - error
+  // + size > 3000 - error
+  //let windowWidth = innerWidth   //-> browserul a creat-o si noi avem acces la ea, e o variabila predefinita (avem si innerHeight)  //+prompt("Window size?")
+  
+  //DECISION / adaptive
+
+  if( windowWidth <= BREAK_POINT_EXTRA_SMALL ) {
+
+    if(windowWidth <= BREAK_POINT_EXTRA_SMALL && windowWidth > MIN_SIZE) {
+      alert("extra small")
+    } else  {
+      alert("error")
+    }
+    
+  } else if(windowWidth <= BREAK_POINT_SMALL){
+    alert( "SMALL" )
+  } else if(windowWidth <= BREAK_POINT_MEDIUM){
+    alert( "MEDIUM" )
+  } else {
+
+    if(windowWidth > BREAK_POINT_MEDIUM && windowWidth < MAX_SIZE) {
+      alert("LARGE")
+    } else  {
+      alert("error")
+    }
+  } 
+
+  
+  
+</script>

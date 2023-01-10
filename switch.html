@@ -1,0 +1,48 @@
+<script>
+
+  // switch -> branching
+
+  //formula 
+/*
+  switch( expression) {  // egaleaza cu : === identic
+    case value_1:
+            code_1
+    break
+    case value_2:
+            code_2
+    break
+    //.....
+    case value_N:
+            code_N
+    break
+    default:
+        code_default
+    break
+  }
+  */
+
+ // CHOOSE THE DAY 
+  let calendar = parseInt(prompt("What Calendar?"))
+  let day = parseInt(prompt("Day of the week")) // 1..7
+  //HW : using if/else + prompt() 
+  //        - what calendar?
+  
+  
+  switch( day ) {
+    case 1: document.write("Mo"); break
+    case 2: document.write("Tu"); break
+    case 3: document.write("Wd"); break
+    case 4: document.write("Th"); break
+    case 5: 
+      let times = 3 
+      while( times > 0 ) {
+        document.write("Yeeeeey!!!")
+        times--
+      }
+      document.write("Fr"); break
+    case 6: document.write("Sa"); break
+    case 7: document.write("Su"); break
+
+    default: document.write("Are you drunk? :D"); break
+  }
+</script>
