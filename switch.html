@@ -22,26 +22,67 @@
   */
 
  // CHOOSE THE DAY 
-  let calendar = parseInt(prompt("What Calendar?"))
+  let calendar = prompt("What Calendar?")
   let day = parseInt(prompt("Day of the week")) // 1..7
   //HW : using if/else + prompt() 
   //        - what calendar?
   
   
   switch( day ) {
-    case 1: document.write("Mo"); break
-    case 2: document.write("Tu"); break
-    case 3: document.write("Wd"); break
-    case 4: document.write("Th"); break
+    case 1:
+      if(calendar === "gregorian") {
+          document.write("Mo")
+      } else {
+          document.write("Su")
+      }
+      break
+    case 2: 
+      if(calendar === "gregorian") {
+          document.write("Tu")
+      } else {
+          document.write("Mo")
+      }
+      break
+    case 3: 
+      if(calendar === "gregorian") {
+          document.write("Wd")
+      } else {
+          document.write("Tu")
+      }
+      break
+    case 4: 
+    if(calendar === "gregorian") {
+          document.write("Th")
+      } else {
+          document.write("Wd")
+      }
+      break
     case 5: 
       let times = 3 
       while( times > 0 ) {
         document.write("Yeeeeey!!!")
         times--
       }
-      document.write("Fr"); break
-    case 6: document.write("Sa"); break
-    case 7: document.write("Su"); break
+      if(calendar === "gregorian") {
+          document.write("Fr")
+      } else {
+          document.write("Th")
+      }
+      break
+    case 6: 
+    if(calendar === "gregorian") {
+          document.write("Sa")
+      } else {
+          document.write("Fr")
+      }
+      break
+    case 7: 
+    if(calendar === "gregorian") {
+          document.write("Su")
+      } else {
+          document.write("Sa")
+      }
+      break
 
     default: document.write("Are you drunk? :D"); break
   }
