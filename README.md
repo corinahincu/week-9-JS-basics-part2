@@ -61,11 +61,14 @@ ADAPTIVE :
 SWITCH DAY
 
 gregorian calendar
+
 ![image](https://user-images.githubusercontent.com/117738625/211690300-9e1dee1f-336a-4494-b9bd-d6b522d1851d.png)
 ![image](https://user-images.githubusercontent.com/117738625/211690313-25a231b8-f6b4-45f1-835f-db5a69723a84.png)
 ![image](https://user-images.githubusercontent.com/117738625/211690328-d800f024-c232-4d8e-9e32-329e9c2024dd.png)
 
+-------------------------------------------------------------------------------------------------------------------
 julian calendar 
+
 ![image](https://user-images.githubusercontent.com/117738625/211690459-89d56095-5cfe-49d2-92a5-bc84988c9921.png)
 ![image](https://user-images.githubusercontent.com/117738625/211690494-a01a96d9-9c46-4b2c-8129-3fbd747d6236.png)
 ![image](https://user-images.githubusercontent.com/117738625/211690508-9e20f5d2-af90-4985-a842-1ae5f5635d2e.png)
